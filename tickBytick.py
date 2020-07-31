@@ -30,8 +30,6 @@ class LiveMarketData(TestApp):
               "MidPoint:", midPoint)
 
 if __name__ == "__main__":
-    datafetcher = dataFetcher()
-
     app = LiveMarketData()
-    # app.reqTickByTickData(1, ContractSamples.UsdJpyFx(), "MidPoint", 0, True)
+    app.reqTickByTickData(1, ContractSamples.UsdJpyFx(), "MidPoint", 0, True)
 
